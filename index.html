@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Blazing — Oyinloye-Olabisi Oreoluwa | Graphic Designer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Nohemi:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <button class="mobile-close" onclick="closeMobileMenu()">✕</button>
+  <a href="#hero" onclick="closeMobileMenu()">Home</a>
+  <a href="#about" onclick="closeMobileMenu()">About</a>
+  <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
+  <a href="#contact" onclick="closeMobileMenu()">Contact</a>
+</div>
+
+<!-- Project Modal -->
+<div class="project-modal" id="projectModal">
+  <div class="modal-overlay" onclick="closeProjectModal()"></div>
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProjectModal()">✕</button>
+    <div class="modal-body" id="modalBody">
+      <!-- Content will be loaded here -->
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">
+     <img src="Logos/Green Logo.png" alt="Logo" style="height: 30px; width: auto; max-width: 120px; object-fit: contain;">
+  </a>
+      <ul class="nav-links">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta">Book a Call</a>
+  <button class="nav-mobile-toggle" onclick="openMobileMenu()">☰</button>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-orb hero-orb-1"></div>
+  <div class="hero-orb hero-orb-2"></div>
+
+  <div class="hero-content">
+    <div class="hero-tag">✦ Available for new projects</div>
+    <h1 class="hero-headline">
+      Designing Visual<br>
+      Identities That Make<br>
+      <span class="line-accent">Brands</span> <span class="line-outline">Unforgettable</span>
+    </h1>
+    <p class="hero-sub">
+      I'm <strong>Oyinloye-Olabisi Oreoluwa</strong>, a Graphic Designer with <strong>4 years of experience</strong> crafting compelling brand identities, logos, and high-impact visual designs that tell stories and leave lasting impressions.
+    </p>
+    <div class="hero-btns">
+      <a href="#portfolio" class="btn-primary">View Portfolio →</a>
+      <a href="#contact" class="btn-secondary">Book a Call ↗</a>
+    </div>
+
+    <!-- Stats -->
+    <div class="hero-stats">
+      <div><div class="stat-num">4+</div><div class="stat-label">Years Experience</div></div>
+      <div><div class="stat-num">40+</div><div class="stat-label">Projects Delivered</div></div>
+      <div><div class="stat-num">30+</div><div class="stat-label">Happy Clients</div></div>
+    </div>
+
+    <!-- Client logos marquee -->
+    <div class="clients-marquee-wrap">
+      <div class="clients-marquee-label">Trusted by growing brands</div>
+      <div class="marquee-outer">
+        <div class="marquee-track">
+          
+          <!-- Set A -->
+          <div class="client-pill"><span class="client-pill-dot" style="background:#ff6b1a"></span><img src=
+          <div class="client-pill"><span class="client-pill-dot" style="background:#4ecdc4"></span>Elara Fashion</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#ffe66d"></span><img src="Logos/RUUVOO LOGO.png" alt="Logo" style="height: 40px; width: auto; max-width: 130px; object-fit: contain;">
+          <div class="client-pill"><span class="client-pill-dot" style="background:#a8edea"></span><img src="Logos/Sarkastic Fit.png" alt="Logo" style="height: 40px; width: auto; max-width: 130px; object-fit: contain;">
+          <div class="client-pill"><span class="client-pill-dot" style="background:#fd79a8"></span><img src="Logos/Korezi Store.png" alt="Logo" style="height: 40px; width: auto; max-width: 130px; object-fit: contain;">
+          <div class="client-pill"><span class="client-pill-dot" style="background:#00b894"></span><img src="Logos/Green Logo.png" alt="Logo" style="height: 30px; width: 70px; object-fit: contain;">
+          <div class="client-pill"><span class="client-pill-dot" style="background:#e17055"></span><img src="Logos/THE MILLIONAIRE MIND LOGO.png" alt="Logo" style="height: 40px; width: auto; max-width: 130px; object-fit: contain;">
+          <div class="client-pill"><span class="client-pill-dot" style="background:#fdcb6e"></span><img src="Logos/TRIONLIFE.png" alt="Logo"style="height: 40px; width: auto; max-width: 130px; object-fit: contain;">
+          <div class="client-pill"><span class="client-pill-dot" style="background:#74b9ff"></span><img src="Logos/QA.png" alt="Logo" style="height: 40px; width: auto; max-width: 130px; object-fit: contain;">
+          <!-- Set B (duplicate for seamless loop) -->
+          <div class="client-pill"><span class="client-pill-dot" style="background:#ff6b1a"></span>NovaBrand Co.</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#4ecdc4"></span>Elara Fashion</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#ffe66d"></span>AgroGen Ltd</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#a8edea"></span>Aqua Wellness</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#fd79a8"></span>Rolex &amp; Reed</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#6c5ce7"></span>Queen's Aura</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#00b894"></span>Verde Organics</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#e17055"></span>PeakStudios</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#fdcb6e"></span>Luxe Media</div>
+          <div class="client-pill"><span class="client-pill-dot" style="background:#74b9ff"></span>SwiftTech NG</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="hero-ring ring-1"></div>
+    <div class="hero-ring ring-2"></div>
+    <div class="hero-ring ring-3"></div>
+    <div class="hero-center-orb"><img src="Green Logo.png" alt="Logo" style="height: 80px; width: 80px; object-fit: contain;"></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label">About Me</div>
+  <div class="about-grid">
+    <div class="reveal">
+      <div class="about-visual">
+        <img src="About Me/Ore 4.png" alt="Oyinloye-Olabisi Oreoluwa" class="about-photo">
+        <div class="about-badge">
+          <div class="badge-icon"><img src="Logos/Green Logo.png" alt="Logo" style="height: 30px; width: 30px; object-fit: contain;"></div>
+          <div class="badge-info">
+            <strong>Blazing</strong>
+            Graphics designer / Visual and Brand identity designer
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <div class="section-label reveal">Who I Am</div>
+      <h2 class="section-title reveal reveal-delay-1">Crafting Brands With <span>Purpose</span> &amp; Precision</h2>
+      <p class="reveal reveal-delay-2">
+        I'm <strong>Oyinloye-Olabisi Oreoluwa</strong>, the creative mind behind <strong>Blazing</strong> — a personal brand built on the belief that every brand deserves a visual identity as powerful as its story. Over the past 4 years, I've transformed ideas into striking visual experiences.
+      </p>
+      <p class="reveal reveal-delay-3">
+        I specialize in brand identity, logo design, and digital visuals that communicate with clarity and impact. My process blends <strong>strategic thinking with creative execution</strong>, ensuring every design decision serves a purpose and resonates with your audience.
+      </p>
+      <p class="reveal reveal-delay-4">
+        Whether you're launching a new brand or revamping an existing one, I bring the same attention to detail, passion for storytelling, and commitment to excellence to every project.
+      </p>
+      <div class="skills-grid reveal">
+        <div class="skill-pill"><span class="dot"></span> Brand Identity Design</div>
+        <div class="skill-pill"><span class="dot"></span> Logo Design</div>
+        <div class="skill-pill"><span class="dot"></span> Flyer Design</div>
+        <div class="skill-pill"><span class="dot"></span> Social Media Design</div>
+        <div class="skill-pill">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;font-size:12px;font-weight:bold;color:#ff9a00;background:#1a1a1a;border-radius:5px;margin-right:8px;font-family:Arial,sans-serif;">
+    Ai
+  </span>
+  Adobe Illustrator
+</div>
+       <div class="skill-pill">
+  <span style="display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;font-size:12px;font-weight:bold;color:#31a8ff;background:#001e36;border-radius:5px;margin-right:8px;font-family:Arial,sans-serif;">
+    Ps
+  </span>
+  Adobe Photoshop
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PORTFOLIO -->
+<section id="portfolio">
+  <div class="section-label reveal">Portfolio</div>
+  <h2 class="section-title reveal reveal-delay-1">Selected <span>Work</span></h2>
+  <p style="color:var(--gray);max-width:540px;line-height:1.7" class="reveal reveal-delay-2">
+    A curated collection of brand identities, logos, and visual campaigns that showcase the depth of Blazing's creative range.
+  </p>
+  <div class="portfolio-filters reveal reveal-delay-3">
+    <button class="filter-btn active" onclick="filterProjects('all',this)">All Work</button>
+    <button class="filter-btn" onclick="filterProjects('brand',this)">Brand Identity</button>
+    <button class="filter-btn" onclick="filterProjects('logo',this)">Logo Design</button>
+    <button class="filter-btn" onclick="filterProjects('flyer',this)">Flyers</button>
+    <button class="filter-btn" onclick="filterProjects('social',this)">Social Media</button>
+     <button class="filter-btn" onclick="filterProjects('packaging',this)">Packaging Designs</button>
+    <button class="filter-btn" onclick="filterProjects('sport',this)">Sport Design</button>
+  </div>
+  <div class="portfolio-grid">
+
+    <div class="project-card reveal" data-cat="brand">
+      <div class="project-img">
+        <div class="carousel-container">
+          <div class="carousel-track" id="ruuvooCarousel">
+            <img src="RUUVOO/02_logo.png" alt="RUUVOO Logo" class="carousel-img">
+            <img src="RUUVOO/14_Introdcuton_.png" alt="RUUVOO Introduction" class="carousel-img">
+            <img src="RUUVOO/16_Core Values.png" alt="RUUVOO Core Values" class="carousel-img">
+            <img src="RUUVOO/17_Core Services.png" alt="RUUVOO Core Services" class="carousel-img">
+            <img src="RUUVOO/24_TEE 1.png" alt="RUUVOO Merchandise" class="carousel-img">
+            <img src="RUUVOO/27_TEE 4.png" alt="RUUVOO Design" class="carousel-img">
+            <img src="RUUVOO/02_logo.png" alt="RUUVOO Logo" class="carousel-img">
+            <img src="RUUVOO/14_Introdcuton_.png" alt="RUUVOO Introduction" class="carousel-img">
+            <img src="RUUVOO/16_Core Values.png" alt="RUUVOO Core Values" class="carousel-img">
+            <img src="RUUVOO/17_Core Services.png" alt="RUUVOO Core Services" class="carousel-img">
+            <img src="RUUVOO/24_TEE 1.png" alt="RUUVOO Merchandise" class="carousel-img">
+            <img src="RUUVOO/27_TEE 4.png" alt="RUUVOO Design" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Brand Identity</div>
+        <div class="project-title">RUUVOO</div>
+        <div class="project-desc">Complete brand identity for a crypto startup — logo design, visual system, and brand guidelines with modern aesthetics.</div>
+      </div>
+    </div>
+
+    <div class="project-card reveal reveal-delay-1" data-cat="brand">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #ffeae8;">
+          <div class="carousel-track">
+            <img src="QA/Queen's Aura Branding-01.png" alt="Queen's Aura Branding 01" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-05.png" alt="Queen's Aura Branding 05" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-07.png" alt="Queen's Aura Branding 07" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-08.png" alt="Queen's Aura Branding 08" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-09.png" alt="Queen's Aura Branding 09" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-11.png" alt="Queen's Aura Branding 11" class="carousel-img">
+             <img src="QA/Queen's Aura Branding-01.png" alt="Queen's Aura Branding 01" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-05.png" alt="Queen's Aura Branding 05" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-07.png" alt="Queen's Aura Branding 07" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-08.png" alt="Queen's Aura Branding 08" class="carousel-img">
+            <img src="QA/Queen's Aura Branding-09.png" alt="Queen's Aura Branding 09" class="carousel-img">
+            <img src="Queen's Aura Branding-11.png" alt="Queen's Aura Branding 11" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Brand Identity</div>
+        <div class="project-title">Queen's Aura Brand Design</div>
+        <div class="project-desc">Luxury skincare and cosmetics brand identity featuring complete visual system, logo design, and premium brand guidelines.</div>
+      </div>
+    </div>
+
+
+
+
+     <div class="project-card reveal reveal-delay-1" data-cat="brand">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #132039;">
+          <div class="carousel-track">
+            <img src="GA/GA_00.png" alt="GA_00" class="carousel-img">
+            <img src="GA/GA_01.png" alt="GA_01" class="carousel-img">
+            <img src="GA/GA_02.png" alt="GA_02" class="carousel-img">
+            <img src="GA/GA_03.png" alt="GA_03" class="carousel-img">
+            <img src="GA/GA_04.png" alt="GA_04" class="carousel-img">
+            <img src="GA/GA_05.png" alt="GA_05" class="carousel-img">
+            <img src="GA/GA_00.png" alt="GA_00" class="carousel-img">
+            <img src="GA/GA_01.png" alt="GA_01" class="carousel-img">
+            <img src="GA/GA_02.png" alt="GA_02" class="carousel-img">
+            <img src="GA/GA_03.png" alt="GA_03" class="carousel-img">
+            <img src="GA/GA_04.png" alt="GA_04" class="carousel-img">
+            <img src="GA/GA_05.png" alt="GA_05" class="carousel-img"> 
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Brand Identity</div>
+        <div class="project-title">Gabriel Adewunmi</div>
+        <div class="project-desc">">Gabriel Adewunmi</div>
+        <div class="project-desc">Brand Identity for Gabriel Adewunmi [a project manager] with full visual system including logo, typography, and brand standards manual.</div>
+      </div>
+    </div>
+
+
+  
+
+     <div class="project-card reveal reveal-delay-1" data-cat="brand">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #e9e9e9;">
+          <div class="carousel-track">
+            <img src="BELLA/BP 1.png" alt="BP 1" class="carousel-img">
+            <img src="BELLA/BP 2.png" alt="BP 2" class="carousel-img">
+            <img src="BELLA/BP 3.png" alt="BP 3" class="carousel-img">
+            <img src="BELLA/BP 4.png" alt="BP 4" class="carousel-img">
+            <img src="BELLA/BP 5.png" alt="BP 5" class="carousel-img">
+            <img src="BELLA/BP 6.png" alt="BP 6" class="carousel-img">
+            <img src="BELLA/BP 7.png" alt="BP 7" class="carousel-img">
+            <img src="BELLA/BP 8.png" alt="BP 8" class="carousel-img">
+            <img src="BELLA/BP 9.png" alt="BP 9" class="carousel-img">
+             <img src="BELLA/BP 1.png" alt="BP 1" class="carousel-img">
+            <img src="BELLA/BP 2.png" alt="BP 2" class="carousel-img">
+            <img src="BELLA/BP 3.png" alt="BP 3" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Brand Identity</div>
+        <div class="project-title">Bella's Place</div>
+        <div class="project-desc">Brand Identity for Gabriel Adewunmi [a project manager] with full visual system including logo, typography, and brand standards manual.</div>
+      </div>
+    </div>
+
+
+
+  
+    <div class="project-card reveal reveal-delay-2" data-cat="logo">
+      <div class="project-img"><div class="project-img-bg pc-6" style="flex-direction:column">
+        <div style="width:70px;height:70px;border:3px solid #fbe2d5;border-radius:16px;display:flex;align-items:center;justify-content:center;transform:rotate(15deg)">
+          <div style="transform:rotate(-15deg);font-family:Syne,sans-serif;font-weight:900;font-size:1.5rem;color:#ff6b1a">AG</div>
+        </div>
+      </div><div class="project-overlay"><span class="view-btn">View Project ↗</span></div></div>
+      <div class="project-info">
+        <div class="project-category">Logo Design</div>
+        <div class="project-title">AgroGen Brand Mark</div>
+        <div class="project-desc">Geometric logo mark for an agricultural technology startup blending innovation with organic forms.</div>
+      </div>
+    </div>
+
+
+
+
+    
+    <div class="project-card reveal reveal-delay-2" data-cat="flyer">
+      <div class="project-img"><div class="project-img-bg pc-3" style="flex-direction:column;gap:4px;padding:20px">
+        <div style="font-size:0.65rem;letter-spacing:0.3em;color:#ff6b1a">EXCLUSIVE EVENT</div>
+        <div style="font-family:Syne,sans-serif;font-size:1.8rem;font-weight:800;color:white;line-height:1.1">NEON<br>NIGHTS</div>
+        <div style="font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:8px">FRI 15 NOV — LAGOS</div>
+      </div><div class="project-overlay"><span class="view-btn">View Project ↗</span></div></div>
+      <div class="project-info">
+        <div class="project-category">Flyer Design</div>
+        <div class="project-title">TRIONLIFE</div>
+        <div class="project-desc">High-energy event flyer for an exclusive Lagos nightlife event with bold typography and neon aesthetics.</div>
+      </div>
+    </div>
+
+
+
+
+   
+     <div class="project-card reveal reveal-delay-1" data-cat="social">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #e5ebf7;">
+          <div class="carousel-track">
+            
+            <img src="Feranmite/01_FT.png" alt="01_FT" class="carousel-img">
+            <img src="Feranmite/02_FT.png" alt="02_FT" class="carousel-img">
+            <img src="Feranmite/03_FT.png" alt="03_FT" class="carousel-img">
+            <img src="Feranmite/04_FT.png" alt="04_FT" class="carousel-img">
+            <img src="Feranmite/05_FT.png" alt="05_FT" class="carousel-img">
+            <img src="Feranmite/06_FT.png" alt="06_FT" class="carousel-img">
+            <img src="Feranmite/07_FT.png" alt="07_FT" class="carousel-img">
+            <img src="Feranmite/08_FT.png" alt="08_FT" class="carousel-img">
+            <img src="Feranmite/09_FT.png" alt="09_FT" class="carousel-img">
+            <img src="Feranmite/10_FT.png" alt="10_FT" class="carousel-img">
+            <img src="Feranmite/11_FT.png" alt="11_FT" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Social Media FLyer</div>
+        <div class="project-title">Feranmite Technology</div>
+        <div class="project-desc">A Tech Brand with a Modern Visual System, Focused on Innovation, Digital Solutions, and a Strong Visual Presence</div>
+      </div>
+    </div>
+
+
+    <!-- ...existing code... -->
+
+
+
+     <div class="project-card reveal reveal-delay-1" data-cat="social">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #eceaed;">
+          <div class="carousel-track">
+            <img src="JOJU/JC 1.png" alt="JC 1.png" class="carousel-img">
+            <img src="JOJU/JC 2.PNG" alt="JC 2.png" class="carousel-img">
+            <img src="JOJU/JC 1.png" alt="JC 1.png" class="carousel-img">
+            <img src="JOJU/JC 2.PNG" alt="JC 2.png" class="carousel-img">
+            <img src="JOJU/JC 1.png" alt="JC 1.png" class="carousel-img">
+            <img src="JOJU/JC 2.PNG" alt="JC 2.png" class="carousel-img">
+             <img src="JOJU/JC 1.png" alt="JC 1.png" class="carousel-img">
+            <img src="JOJU/JC 2.png" alt="JC 2.png" class="carousel-img">
+            <img src="JOJU/JC 1.png" alt="JC 1.png" class="carousel-img">
+            <img src="JOJU/JC 2.PNG" alt="JC 2.png" class="carousel-img">
+            <img src="JOJU/JC 1.png" alt="JC 1.png" class="carousel-img">
+            <img src="JOJU/JC 2.PNG" alt="JC 2.png" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Social Media FLyer</div>
+        <div class="project-title">JOJU Cakes</div>
+        <div class="project-desc">A Bakery Brand with a Sweet and Elegant Visual System, Focused on Taste, Creativity, and a Delightful Visual Presence</div>
+      </div>
+    </div>
+
+
+    
+  <div class="project-card reveal reveal-delay-1" data-cat="social">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #F3F9F0;">
+          <div class="carousel-track">
+            <img src="TRIONLIFE/TR 1.png" alt="TR 1.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 2.png" alt="TR 2.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 3.png" alt="TR 3.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 4.png" alt="TR 4.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 5.png" alt="TR 5.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 6.png" alt="TR 6.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 1.png" alt="TR 1.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 2.png" alt="TR 2.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 3.png" alt="TR 3.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 4.png" alt="TR 4.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 5.png" alt="TR 5.png" class="carousel-img">
+            <img src="TRIONLIFE/TR 6.png" alt="TR 6.png" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Social Media FLyer</div>
+        <div class="project-title">TRIONLIFE</div>
+        <div class="project-desc">A Bakery Brand with a Sweet and Elegant Visual System, Focused on Taste, Creativity, and a Delightful Visual Presence</div>
+      </div>
+    </div>
+
+
+  <div class="project-card reveal reveal-delay-3" data-cat="social">
+      <div class="project-img">
+        <div class="project-img-bg pc-4" style="flex-direction:column;gap:6px;padding:20px"></div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Social Media</div>
+        <div class="project-title">Campaign Graphics</div>
+        <div class="project-desc">Stories and carousel templates for brand engagement.</div>
+      </div>
+    </div>
+
+  <div class="project-card reveal reveal-delay-1" data-cat="packaging">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #F3F9F0;">
+          <div class="carousel-track">
+            <img src="Packaging Design/1.png" alt="TR 1.png" class="carousel-img">
+            <img src="Packaging Design/2.png" alt="TR 2.png" class="carousel-img">
+            <img src="Packaging Design/3.png" alt="TR 3.png" class="carousel-img">
+            <img src="Packaging Design/4.png" alt="TR 4.png" class="carousel-img">
+            <img src="Packaging Design/5.png" alt="TR 5.png" class="carousel-img">
+            <img src="Packaging Design/6.png" alt="TR 6.png" class="carousel-img">
+            <img src="Packaging Design/7.png" alt="TR 6.png" class="carousel-img">
+            <img src="Packaging Design/8.png" alt="TR 6.png" class="carousel-img"> 
+            <img src="Packaging Design/1.png" alt="TR 1.png" class="carousel-img">
+            <img src="Packaging Design/2.png" alt="TR 2.png" class="carousel-img">
+            <img src="Packaging Design/3.png" alt="TR 3.png" class="carousel-img">
+            <img src="Packaging Design/4.png" alt="TR 4.png" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Packaging Designs</div>
+        <div class="project-title">Wellthrix Plus</div>
+        <div class="project-desc">A Bakery Brand with a Sweet and Elegant Visual System, Focused on Taste, Creativity, and a Delightful Visual Presence</div>
+      </div>
+    </div>
+
+
+<div class="project-card reveal reveal-delay-1" data-cat="packaging">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #F3F9F0;">
+          <div class="carousel-track">
+            <img src="Packaging Design 2/1.png" alt="1.png" class="carousel-img">
+            <img src="Packaging Design 2/2.png" alt="2.png" class="carousel-img">
+            <img src="Packaging Design 2/3.png" alt="3.png" class="carousel-img">
+            <img src="Packaging Design 2/4.png" alt="4.png" class="carousel-img">
+            <img src="Packaging Design 2/5.png" alt="5.png" class="carousel-img">
+            <img src="Packaging Design 2/6.png" alt="6.png" class="carousel-img">
+            <img src="Packaging Design 2/7.png" alt="7.png" class="carousel-img">
+            <img src="Packaging Design 2/8.png" alt="8.png" class="carousel-img"> 
+            <img src="Packaging Design 2/9.png" alt="9.png" class="carousel-img">
+            <img src="Packaging Design 2/1.png" alt="1.png" class="carousel-img">
+            <img src="Packaging Design 2/2.png" alt="2.png" class="carousel-img">
+            <img src="Packaging Design 2/3.png" alt="3.png" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Packaging Designs</div>
+        <div class="project-title">Perfect Health</div>
+        <div class="project-desc">A Bakery Brand with a Sweet and Elegant Visual System, Focused on Taste, Creativity, and a Delightful Visual Presence</div>
+      </div>
+    </div>
+
+
+
+   <div class="project-card reveal reveal-delay-1" data-cat="sport">
+      <div class="project-img">
+        <div class="carousel-container" style="background: #ffffff;">
+          <div class="carousel-track">
+           <img src="Football Designs/EPL BEGINS.png" alt="EPL BEGINS" class="carousel-img">
+            <img src="Football Designs/Chelsea.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/_CHEBHA.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/_ARSCHE.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/_ARSMCI 2.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/_LINCHE [Carabao Cup].png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/EPL MATCHES 2.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/Cucurella 2.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/Chelsea Nov Calendar.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/chelsea vs barca.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/_UECL FINAL.png" alt="Chelsea" class="carousel-img">
+            <img src="Football Designs/_UECL FINAL.png" alt="Chelsea" class="carousel-img">
+          </div>
+        </div>
+        <div class="project-overlay"><span class="view-btn">View Project ↗</span></div>
+      </div>
+      <div class="project-info">
+        <div class="project-category">Sports Design</div>
+        <div class="project-title">....</div>
+        <div class="project-desc">A Bakery Brand with a Sweet and Elegant Visual System, Focused on Taste, Creativity, and a Delightful Visual Presence</div>
+      </div>
+    
+<!-- ...existing code... -->
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-label reveal">Get in Touch</div>
+  <div class="contact-grid">
+        <div class="reveal reveal-delay-1">
+          <h2 class="section-title reveal reveal-delay-1">Let's Build Something <span>Exceptional</span></h2>
+      <h3>Ready to elevate your brand?</h3>
+      <p>Whether you have a project in mind or just want to explore possibilities, I'd love to hear from you. Let's create something remarkable together.</p>
+      
+      
+     <div class="contact-grid"></div> 
+      <div class="contact-links">
+        <a href="mailto:blazinggg0886@gmail.com" class="contact-link">
+          <div class="contact-link-icon"><img src="Logos/mail.png" alt="mail" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></div>
+          <div class="contact-link-text"><strong>blazinggg0886@gmail.com</strong>Email Me</div>
+        </a>
+        <a href="https://wa.me/2348151519224" class="contact-link">
+          <div class="contact-link-icon"><img src="Logos/Whatsapp.png" alt="Whatsapp" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></div>
+          <div class="contact-link-text"><strong>WhatsApp</strong>Quick response guaranteed</div>
+        </a>
+        <a href="https://www.instagram.com/i_am_blazing_?igsh=c3VsMnZzMjNhYzF6" class="contact-link">
+          <div class="contact-link-icon"><img src="Logos/Insta White.png" alt="Instagram" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></div>
+           <div class="contact-link-text"><strong>Instagram</strong>@i_am_blazing_</div>
+        </a>
+        <a href="https://www.behance.net/blazingggg" class="contact-link">
+          <div class="contact-link-icon"><img src="Logos/Be.png" alt="behance" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></div>
+          <div class="contact-link-text"><strong>Behance</strong>View full portfolio</div>
+        </a>
+        <a href="https://www.linkedin.com/in/oreoluwa-oyinloye-olabisi-23b20b345" class="contact-link">
+          <div class="contact-link-icon"><img src="Logos/Linkedln.png" alt="LinkedIn" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></div>
+          <div class="contact-link-text"><strong>LinkedIn</strong>Connect with me</div>
+        </a>
+      </div>
+    </div>
+
+
+    
+    <form class="contact-form reveal reveal-delay-2" id="contactForm" action="https://formsubmit.co/blazinggg0886@gmail.com" method="POST">
+      <div class="form-title">Start Your Project</div>
+      <div class="form-sub">Fill in the details and I'll get back to you within 24 hours.</div>
+      <div class="form-row">
+        <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="Oyinloye-Olabisi Oreoluwa" required></div>
+        <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="blazinggg@example.com" required></div>
+      </div>
+      <div class="form-group">
+        <label>Project Type</label>
+        <select name="projectType" required>
+          <option value="">Select a service...</option>
+          <option value="Brand Identity Design">Brand Identity Design</option>
+          <option value="Logo Design">Logo Design</option>
+          <option value="Flyer Design">Flyer Design</option>
+          <option value="Social Media Design">Social Media Design</option>
+          <option value="Sport Design">Sport Design</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Tell me about your project</label>
+        <textarea name="message" placeholder="Describe your brand, goals, and what you're looking to achieve..." required></textarea>
+      </div>
+      <input type="hidden" name="_subject" value="New Project Inquiry from Blazing Portfolio">
+      <input type="hidden" name="_captcha" value="false">
+      <button type="submit" class="btn-submit">Book a Call →</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo"><img src="Logos/Green Logo.png" alt="Blazing Logo"></div>
+  <div class="footer-copy">© 2025 Blazing. Designed by Oyinloye-Olabisi Oreoluwa.</div>
+  <div class="footer-socials">
+    <a href="#" class="social-btn"><img src="Logos/Insta White.png" alt="Instagram" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></a>
+    <a href="#" class="social-btn"><img src="Logos/Be.png" alt="Instagram" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></a>
+    <a href="#" class="social-btn"><img src="Logos/mail.png" alt="Instagram" style="height: 30px; width: auto; max-width: 100px; object-fit: contain;"></div></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
