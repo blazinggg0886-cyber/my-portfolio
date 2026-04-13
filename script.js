@@ -178,14 +178,19 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Fallback for elements visible on page load
-window.addEventListener('load', () => {
+// Reveal visible elements on page load and scroll
+function revealVisible() {
   document.querySelectorAll('.reveal:not(.visible)').forEach(el => {
     const rect = el.getBoundingClientRect();
     if (rect.top < window.innerHeight - 40) {
       el.classList.add('visible');
-  }
+    }
   });
+}
+
+// Fallback for elements visible on page load
+window.addEventListener('load', () => {
+  revealVisible();
 });
 
 // ========== PORTFOLIO FILTERING ==========
@@ -396,7 +401,7 @@ window.addEventListener('load', () => {
 window.addEventListener('scroll', () => {
   handleNavbarScroll();
   revealVisible();
-});
+}, { passive: true });
 
 // Add touch support for mobile interactions
 document.addEventListener('touchend', (e) => {
@@ -416,3 +421,102 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// ========== TESTIMONIALS CAROUSEL ==========
+let currentTestimonialIndex = 0;
+let testimonialsPerView = 3;
+
+function initTestimonialCarousel() {
+  const track = document.getElementById('testimonialsTrack');
+  const cards = track ? track.querySelectorAll('.testimonial-card') : [];
+  const dotsContainer = document.getElementById('testimonialsDots');
+  
+  if (!track || cards.length === 0 || !dotsContainer) return;
+  
+  // Clear existing dots
+  dotsContainer.innerHTML = '';
+  
+  // Calculate items per view based on screen size
+  updateTestimonialsPerView();
+  
+  // Create pagination dots
+  const maxIndex = Math.max(0, cards.length - testimonialsPerView);
+  for (let i = 0; i <= maxIndex; i++) {
+    const dot = document.createElement('div');
+    dot.classList.add('dot');
+    if (i === 0) dot.classList.add('active');
+    dot.onclick = () => goToTestimonial(i);
+    dotsContainer.appendChild(dot);
+  }
+}
+
+function updateTestimonialsPerView() {
+  const screenWidth = window.innerWidth;
+  if (screenWidth <= 768) {
+    testimonialsPerView = 1;
+  } else if (screenWidth <= 1024) {
+    testimonialsPerView = 2;
+  } else {
+    testimonialsPerView = 3;
+  }
+}
+
+function nextTestimonial() {
+  const track = document.getElementById('testimonialsTrack');
+  const cards = track ? track.querySelectorAll('.testimonial-card') : [];
+  const maxIndex = Math.max(0, cards.length - testimonialsPerView);
+  
+  currentTestimonialIndex = (currentTestimonialIndex + 1) % (maxIndex + 1);
+  updateTestimonialSlide();
+}
+
+function prevTestimonial() {
+  const track = document.getElementById('testimonialsTrack');
+  const cards = track ? track.querySelectorAll('.testimonial-card') : [];
+  const maxIndex = Math.max(0, cards.length - testimonialsPerView);
+  
+  currentTestimonialIndex = (currentTestimonialIndex - 1 + (maxIndex + 1)) % (maxIndex + 1);
+  updateTestimonialSlide();
+}
+
+function goToTestimonial(index) {
+  currentTestimonialIndex = index;
+  updateTestimonialSlide();
+}
+
+function updateTestimonialSlide() {
+  const track = document.getElementById('testimonialsTrack');
+  const cards = track ? track.querySelectorAll('.testimonial-card') : [];
+  
+  if (!track || cards.length === 0) return;
+  
+  const cardWidth = cards[0].offsetWidth;
+  const gap = 24;
+  const translateX = -currentTestimonialIndex * (cardWidth + gap);
+  
+  track.style.transform = `translateX(${translateX}px)`;
+  
+  // Update active dot
+  const dots = document.querySelectorAll('.dot');
+  dots.forEach((dot, index) => {
+    dot.classList.toggle('active', index === currentTestimonialIndex);
+  });
+}
+
+// Initialize carousel when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+  initTestimonialCarousel();
+  
+  // Reinitialize on window resize
+  window.addEventListener('resize', () => {
+    updateTestimonialsPerView();
+    initTestimonialCarousel();
+    updateTestimonialSlide();
+  });
+});
+
+
+
+
+
+
