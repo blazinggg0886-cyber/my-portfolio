@@ -14,6 +14,37 @@
     --accent-dark: #067313;
   }
 
+  /* Self-hosted font definitions */
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Manrope Regular'), local('Manrope-Regular'),
+         url('fonts/Manrope-Regular.woff2') format('woff2'),
+         url('fonts/Manrope-Regular.woff') format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Manrope Bold'), local('Manrope-Bold'),
+         url('fonts/Manrope-Bold.woff2') format('woff2'),
+         url('fonts/Manrope-Bold.woff') format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Nohemi';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Nohemi SemiBold'), local('Nohemi-SemiBold'),
+         url('fonts/Nohemi-SemiBold.woff2') format('woff2'),
+         url('fonts/Nohemi-SemiBold.woff') format('woff');
+    font-display: swap;
+  }
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
   html { scroll-behavior: auto; }
   body {
